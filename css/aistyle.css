@@ -1,0 +1,40 @@
+.ai-input {
+    position: fixed;
+    top: 95px;
+    z-index: 10000;
+    right: 50px;
+    width: 50px;
+    height: 50px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 50px;
+    /* background: rgb(202 253 255 / 50%); */
+    /* background: black; */
+    background-color: #8e44ad;
+  }
+
+.ai-talk {
+    background-color: #8e44ad;
+    height: 50px;
+    width: 50px;
+    border-radius: 50%;
+    cursor: pointer;
+}
+.ai-input .ai-talk i {
+    /* height: 100%; */
+    font-size: 20px;
+    color: white;
+    background-color: #8e44ad;
+}
+
+/* .ai-gif{
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+}
+
+.ai-gif:hover {
+    cursor: pointer;
+    border: 3px solid #8e44ad;
+} */

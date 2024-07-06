@@ -1,0 +1,111 @@
+*, *::before, *::after {
+    box-sizing: border-box;
+    /* font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif; */
+  }
+  
+  :root {
+    --hue-neutral: 200;
+    --hue-wrong: 0;
+    --hue-correct: 145;
+  }
+  .quiz{
+    display: flex;
+    height: 605px;
+    justify-content: center;
+    align-items: center;
+    align-self: center;
+  }
+   /* body {
+    padding: 0;
+    margin: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background: linear-gradient(rgb(23, 23, 70),rgb(18, 1, 40));
+  } */
+  
+  .quiz body.correct {
+    --hue: var(--hue-correct);
+  }
+  
+  .quiz body.wrong {
+    --hue: var(--hue-wrong);
+  }
+  
+  .quiz .container {
+    width: 800px;
+    max-width: 80%;
+    align-self: center;
+    /* align-content: center; */
+    /* background-color: white; */
+    /* background: linear-gradient(rgb(112, 140, 231),rgb(131, 57, 192)); */
+    /* background: transparent; */
+    border-radius: 5px;
+    padding: 10px;
+    box-shadow: 0 0 10px 2px;
+  }
+  
+  .quiz .question{
+    font-size: 20px;
+    font-weight: bold;
+    /* text-align: center; */
+  }
+  
+  .quiz .btn-grid {
+    display: grid;
+    grid-template-columns: repeat(1, auto);
+    gap: 10px;
+    margin: 20px 0;
+    /* display: flex; */
+  }
+  
+  .quiz .btn {
+    --hue: var(--hue-neutral);
+    border: 1px solid hsl(var(--hue), 100%, 30%);
+    /* background-color: hsl(var(--hue), 100%, 50%); */
+    background-color: #8e44ad;
+    border-radius: 5px;
+    padding: 20px 20px;
+    color: white;
+    outline: none;
+    font-weight: 500;
+    font-size: 18px;
+  }
+  
+  .quiz .btn:hover {
+    border-color: black;
+  }
+  
+  .quiz .btn.correct {
+    /* --hue: var(--hue-correct);
+    color: black; */
+    background: rgb(211, 245, 201);
+    color: green;
+    font-weight: bold;
+  }
+  
+  .quiz .btn.wrong {
+    /* --hue: var(--hue-wrong);
+     */
+     background: rgb(236, 159, 159);
+    color: red;
+  }
+  
+  .quiz .start-btn, .quiz .next-btn {
+    font-size: 1.5rem;
+    font-weight: bold;
+    padding: 10px 20px;
+    background-color: navy;
+    text-align: center;
+    max-width: 150px;
+  }
+  
+  .quiz .controls {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  
+  .quiz .hide {
+    display: none;
+  }

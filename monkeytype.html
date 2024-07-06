@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Speed Typing Game</title>
+    <link rel="stylesheet" href="css/style.css" />
+    <link rel="stylesheet" href="css/monkeytype.css" />
+    <link rel="stylesheet" href="css/aistyle.css" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.2/css/all.min.css">
+
+  </head>
+  <body>
+    <header class="header">
+      <section class="flex">
+        <a href="home.html" class="logo">SkillMatrix</a>
+
+        <!-- <form action="search.html" method="post" class="search-form">
+              <input type="text" name="search_box" required placeholder="search courses..." maxlength="100">
+              <button type="submit" class="fas fa-search"></button>
+           </form> -->
+
+        <div class="icons">
+          <div id="menu-btn" class="fas fa-bars"></div>
+          <div id="search-btn" class="fas fa-search"></div>
+          <div id="user-btn" class="fas fa-user"></div>
+          <div id="toggle-btn" class="fas fa-sun"></div>
+        </div>
+
+        <div class="profile">
+          <img src="images/pic-2.jpg" class="image" alt="" />
+          <h3 class="name">Nancy Sharma</h3>
+          <p class="role">Student</p>
+          <a href="profile.html" class="btn">View Profile</a>
+          <div class="flex-btn">
+            <a href="login.html" class="option-btn">Login</a>
+            <a href="register.html" class="option-btn">Register</a>
+          </div>
+        </div>
+      </section>
+    </header>
+
+    <div class="side-bar">
+      <div id="close-btn">
+        <i class="fas fa-times"></i>
+      </div>
+
+      <div class="profile">
+        <img src="images/pic-2.jpg" class="image" alt="" />
+        <h3 class="name">Nancy Sharma</h3>
+        <p class="role">Student</p>
+        <a href="profile.html" class="btn">View Profile</a>
+      </div>
+
+      <nav class="navbar">
+        <a href="home.html"><i class="fas fa-home"></i><span>Home</span></a>
+        <a href="about.html"><i class="fas fa-question"></i><span>About</span></a>
+        <a href="courses.html"><i class="fas fa-graduation-cap"></i><span>Courses</span></a>
+        <a href="teachers.html"><i class="fas fa-chalkboard-user"></i><span>Teachers</span></a>
+        <a href="contact.html"><i class="fas fa-headset"></i><span>Contact Us</span></a>
+        <a href="monkeytype.html"><i class="fa-solid fa-keyboard"></i><span>Speed Test</span></a>
+        <a href="quiz.html"><i class="fa-regular fa-pen-to-square"></i><span>Quiz </span></a>
+     </nav>
+  
+    </div>
+    <div class="ai-input">
+      <button class="ai-talk">
+        <i class="fas fa-microphone-alt"></i>
+        <!-- <i><img class="ai-gif" src="images/gif.gif" alt="image"></i> -->
+        <!-- <h1 class="content">Click here to speak</h1> -->
+      </button>
+    </div>
+    <div class="type">
+      <div class="wrapper">
+        <input type="text" class="input-field" />
+        <div class="content-box">
+          <div class="typing-text">
+            <p id="paragraph"></p>
+          </div>
+          <div class="content">
+            <ul class="result-details">
+              <li class="time">
+                <p>Time Left:</p>
+                <span><b>60</b>s</span>
+              </li>
+              <li class="mistake">
+                <p>Mistakes:</p>
+                <span>0</span>
+              </li>
+              <li class="wpm">
+                <p>WPM:</p>
+                <span>0</span>
+              </li>
+              <li class="cpm">
+                <p>CPM:</p>
+                <span>0</span>
+              </li>
+            </ul>
+            <button>Try Again</button>
+          </div>
+        </div>
+      </div>
+    </div>
+  </body>
+
+  <script src="js/script.js"></script>
+  <script src="js/ai.js"></script>
+  <script src="js/monkeytype.js"></script>
+</html>
